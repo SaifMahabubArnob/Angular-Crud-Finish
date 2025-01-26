@@ -1,0 +1,171 @@
+/* Container styling */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #121212; /* Dark, modern background */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', sans-serif;
+    color: #e0e0e0; /* Light text for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Header styling */
+  h1 {
+    text-align: center;
+    color: #ffffff; /* Pure white for premium contrast */
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #444444; /* Subtle divider */
+    padding-bottom: 10px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  
+  form input {
+    flex: 1 1 calc(50% - 10px);
+    padding: 15px;
+    background: #1e1e1e; /* Sleek dark input background */
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #e0e0e0;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #00d1b2; /* Futuristic teal for focus */
+    box-shadow: 0 0 10px rgba(0, 209, 178, 0.6);
+  }
+  
+  form button {
+    flex: 1 1 100%;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #00d1b2, #1e90ff); /* Gradient for premium feel */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #1e90ff, #00d1b2); /* Gradient flips on hover */
+  }
+  
+  /* User list styling */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background: #1e1e1e; /* Dark card-style list items */
+    border: 1px solid #333333;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ul li:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+  }
+  
+  /* Buttons inside list items */
+  ul li div {
+    display: flex;
+    gap: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  button.edit {
+    background: linear-gradient(90deg, #ffc107, #ff5722);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+  }
+  
+  button.edit:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #ff5722, #ffc107);
+  }
+  
+  button.delete {
+    background: linear-gradient(90deg, #f44336, #d32f2f);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
+  }
+  
+  button.delete:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #d32f2f, #f44336);
+  }
+  
+  /* Placeholder Styling */
+  form input::placeholder {
+    color: #777777;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    form {
+      gap: 15px;
+      flex-direction: column;
+    }
+  
+    ul li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    ul li div {
+      margin-top: 10px;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
